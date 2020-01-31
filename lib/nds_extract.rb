@@ -7,6 +7,7 @@ def directors_totals(nds)
   row_index = 0
   while row_index < nds.length do
     director_name = nds[row_index]
+    binding.pry
     column_index = 0
     while column_index < nds[row_index][:movies].length do
       movie = nds[row_index][:movies][column_index]
@@ -17,7 +18,6 @@ def directors_totals(nds)
       end
     column_index += 1
     end
-    # director_total_gross
     row_index += 1
   end
   return director_total_gross
